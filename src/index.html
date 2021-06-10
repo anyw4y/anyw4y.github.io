@@ -89,16 +89,33 @@
                     <h2>Название проекта</h2>
                     <p>Текст</p>
                 </div>
-                <div class="price">
+                <div class="price_calc">
                     <h2>Расчёт стоимости</h2>
+                    <form>
                     <p>ТИП САЙТА</p>
+                        <p><select name="" id="">
+                            <option value="no_one" disabled selected>Выберите пункт</option>
+                            <option value="site_type">1 тип</option>
+                            <option value="site_type">2 тип</option>
+                        </select></p>
                     <p>ДИЗАЙН</p>
+                        <p><select name="" id="">
+                            <option value="no_one" disabled selected>Выберите пункт</option>
+                            <option value="site_design">1 тип</option>
+                            <option value="site_design">2 тип</option>
+                        </select></p>
                     <p>АДАПТИВНОСТЬ</p>
+                        <p><select name="" id="">
+                            <option value="no_one" disabled selected>Выберите пункт</option>
+                            <option value="site_adapt">1 тип</option>
+                            <option value="site_adapt">2 тип</option>
+                        </select></p>
                     <hr>
                     <div class="count_and_coast">
                         <p>Сроки</p>
                         <p>Стоимость</p>
                     </div>
+                    </form>
                 </div>
 
                 <!-- СТАТИСТИКА-->
@@ -156,7 +173,7 @@
                         <h2>Оставьте мне сообщение</h2>
                         <input type="text" name="name_input" value="" placeholder="Имя">
                         <input type="text" name="email_input" value="" placeholder="Email"><br>
-                        <input type="text" name="message_input" value="" placeholder="Сообщение"><br>
+                        <input type="textarea" name="message_input" value="" placeholder="Сообщение"><br>
                         <input type="submit" name="send" value="Отправить">
                     </div>
                     <div class="messengers">
@@ -173,6 +190,7 @@
                 <div class="map_yandex">
                     КАРТА
                 </div>
+                
                 <footer>Copyright 2021 Андрей Браун. Design by Web</footer>
   </body>
 </html>
