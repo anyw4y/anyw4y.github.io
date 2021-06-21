@@ -1,0 +1,192 @@
+/* СБРОС СТИЛЕЙ */
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav, footer, header, aside{display: block;}
+
+html, body{
+height:100%;
+width:100%;
+font-size: 100%;
+line-height: 1;
+font-size:14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;
+} 
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;} 
+button::-moz-focus-inner{padding: 0; border:0;} 
+a, a:visited{text-decoration: none; color: black;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;} 
+img{vertical-align: top;}
+
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+/* Первы экран */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    background: #344051;
+}
+
+.logo{
+    color: #fff;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 388px;
+    float: left;
+
+}
+
+.menu {
+    float:left;
+    padding-left: 432px;
+}
+
+.menu li {
+    float:left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.main {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/paren.png) 90% 100%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;
+
+}
+
+.title__container {
+    float: left;
+    margin-top: 432px;
+    margin-left: 404px;
+    color: #2c384a;
+    text-align: center;
+
+}
+.title__container h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.title__container h4 {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #79818d;
+}
+
+.title__container input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px;
+    
+}
+
+/* Заглавие каждого экрана */
+
+.part {
+    font-size: 28px;
+    color: #263244;
+    float: left;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 46.5%;
+    padding-top: 110px;
+}
+
+/* ОБО МНЕ */
+
+.about_me_container {
+    font-size: 16px;
+    background-color: #fcfdfd;
+    width: 100%;
+    height: 100%;
+}
+.img_about_me {
+    height: 202px;
+    width: 202px;
+    background-repeat: no-repeat;
+    margin-left: 45%;
+    padding-top: 10%;
+    margin-bottom: 5%;
+}
+.about_me_container>p {
+    color: #3f495a;
+    padding-top: 7%;
+    width: 100%;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+.about_me_container input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 10px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 0px 14px 0px 14px;
+}
+
+.what_i_can{
+    background-image: url(../img/bg_sharps.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.mini_container{
+    float:left;
+    width: 210px;
+    text-align: center;
+}
+.mini_container h1 {
+    color:#cf7600;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.mini_container p {
+    color: #3f495a;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
