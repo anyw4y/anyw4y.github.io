@@ -1,4 +1,6 @@
-/* СБРОС СТИЛЕЙ */
+/* 
+СБРОС СТИЛЕЙ 
+*/
 *{
     padding: 0;
     margin: 0;
@@ -114,7 +116,10 @@ nav {
     
 }
 
-/* Заглавие каждого экрана */
+/*
+ Заглавие каждого экрана
+  */
+
 
 .part {
     font-size: 28px;
@@ -124,9 +129,26 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 110px;
+    padding-bottom: 35px;
+    border-bottom: #d17700 solid 5px;
 }
 
-/* ОБО МНЕ */
+.part_contact{
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 110px;
+    margin-bottom: 70px;
+    padding-bottom: 35px;
+    border-bottom: #d17700 solid 5px;
+}
+
+/*
+ ОБО МНЕ
+  */
 
 .about_me_container {
     font-size: 16px;
@@ -143,7 +165,7 @@ nav {
 }
 .about_me_container>p {
     color: #3f495a;
-    padding-top: 7%;
+    padding-top: 130px;
     width: 100%;
     padding-left: 30%;
     padding-right: 30%;
@@ -163,6 +185,10 @@ nav {
     padding: 0px 16px;
     margin: 0px 14px 0px 14px;
 }
+
+ /* 
+ Что я умею
+  */
 
 .what_i_can{
     background-image: url(../img/bg_sharps.jpg);
@@ -191,6 +217,12 @@ nav {
     padding-top: 20px;
 }
 
+/* 
+КЕЙСЫ
+*/
+.cases  {
+    text-align: left;
+}
 .cases h1 {
     margin-top: 70px;
     text-align: center;
@@ -202,9 +234,8 @@ nav {
     margin-bottom: 40px;
 }
 .portfolio {
+    float: left;
     margin-left: 390px;
-    display: inline-block;
-    
 }
 .portfolio h2 {
     margin-bottom: 15px;
@@ -235,6 +266,32 @@ nav {
     
 }
 
+.project {
+    float:left;
+    margin-left: 85px;
+}
+.project h2 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #384354;
+}
+.project p {
+    color: #3f495a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+/*
+Калькулятор
+*/
+
+.price_calc {
+    margin-bottom: 155px;
+    margin-top: 100px;
+}
 .price_calc h2 {
     font-size: 28px;
     color: #263244;
@@ -242,7 +299,13 @@ nav {
     white-space: nowrap;
     font-weight: bold;
     text-transform: uppercase;
-    padding-top: 110px;
+    padding-top: 300px;
+}
+.price_calc h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 500px;
+    margin-top: 55px;
 }
 .price_calc p {
     font-size: 22px;
@@ -251,6 +314,24 @@ nav {
     margin-top: 55px;
 
 }
+.price_calc select {
+    border: none;
+    background-color: #eeeeee;
+    color: #7d7d7d;
+    border-radius: 4px;
+    max-width: 100%;
+    width: 960px;
+    padding: 16px 20px;
+}
+.count_and_coast {
+    border-top: #d1d1d1 solid 3px;
+    margin-top: 35px;
+}
+
+/*
+СТАТИСТСИКА
+*/
+
 .my_stat {
     background-image: url(/src/img/bgstats.jpg);
     background-repeat: no-repeat;
@@ -277,6 +358,11 @@ nav {
     font-size: 18px;
     font-weight: bold;
 }
+
+/*
+Отзывы
+*/
+
 .feedback {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -292,6 +378,10 @@ nav {
     margin-top: 35px;
 }
 
+/*
+КОНТАКТЫ
+*/
+
 .contacts {
     background-image: url(/src/img/bg_contacts.jpg);
     background-repeat: no-repeat;
@@ -299,16 +389,7 @@ nav {
     text-align: center;
     min-height: 100%;
 }
-.part_contact{
-    font-size: 28px;
-    color: #ffffff;
-    text-align: center;
-    white-space: nowrap;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-top: 110px;
-    padding-bottom: 70px;
-}
+
 .contacts_container {
     margin-left: 50px;
     margin-right: 75px;
@@ -320,8 +401,51 @@ nav {
     margin-top: 15px;
 }
 .messengers {
+    display: inline-block;
     margin-right: 25px;
     margin-left: 25px;
-    margin-top: 75px;
+    margin-top: 35px;
     padding-bottom: 100px;
+}
+.leave_msg {
+    color:#d1d1d1;
+
+}
+.leave_msg h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 45px;
+}
+.leave_msg input {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    max-height: 35px;
+    max-width: 350px;
+    width: 350px
+}
+.leave_msg textarea {
+    max-height: 100px;
+    max-width: 760px;
+    width: 760px;
+    margin-bottom: 25px;
+}
+.leave_msg textarea, input {
+    background-color: #d2d6dc;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 22px;
+}
+.button_submit input {
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    border: 2px solid #f9faff;
+    background: none;
+    border-radius: 5px;
+    color: #f9faff;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 30px 14px 0px 14px;
 }
