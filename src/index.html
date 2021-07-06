@@ -12,6 +12,12 @@
   </head>
 
   <body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
     <header>
         <nav>
             <div class="logo">Андрей Браун</div>
@@ -31,8 +37,8 @@
                 <div class="title__container">
                     <h1>Привет <br> Я Андрей Браун</h1>
                     <h4>Фулл стек Веб-разработчик</h4>
-                    <input type="submit" value="Обо мне">
-                    <input type="submit" value="Мои работы">
+                    <input type="button" value="Обо мне">
+                    <input type="button" value="Мои работы">
                 </div>
             </div>
 
@@ -42,6 +48,7 @@
             <div class="about_me_container">
                 <div class="part">
                     <p>Обо мне</p>
+                    <div class="line"></div>
                 </div>  
                 <div class="img_about_me"><img src="/src/img/miniparen.png" alt=""></div>
                 
@@ -51,7 +58,7 @@
                 Consequuntur animi itaque ipsa distinctio. Perspiciatis rerum nesciunt ducimus dolores itaque reiciendis,
                 ipsa, alias, libero animi quos tempore vitae ipsam! Eos at tempora quidem, dolor tenetur
                 perspiciatis quasi totam eaque.</p>
-                <p><a href="#" download=""><input type="submit" value="Скачать резюме"></a></p>
+                <p><a href="#" download=""><input type="button" value="Скачать резюме"></a></p>
             </div>
 
             <!-- Лист Что я умею-->
@@ -59,6 +66,7 @@
             <div class="what_i_can">
                 <div class="part">
                     Что я умею
+                    <div class="line"></div>
                 </div>
                 <div class="mini_container">
                     <img src="/src/img/notepc_img.png" alt="картинка с ноутом">
@@ -87,6 +95,7 @@
             <div class="cases">
                 <div class="part">
                     <p>Кейсы</p>
+                    <div class="line"></div>
                 </div>
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae deserunt, rem eligendi,</h1>
                 <div class="portf_img"><img src="img/portf1.jpg" alt="картинка сайта клиента"></div>
@@ -138,6 +147,7 @@
             <div class="my_stat">
                 <div class="part">
                     Немного статистики
+                    <div class="line"></div>
                 </div>
                 <div class="stat_container">
                     <img src="/src/img/smile.png" alt="смайлик">
@@ -161,11 +171,13 @@
                 </div>
             </div>
 
+            
                 <!-- Отзывы-->
 
                 <div class="feedback">
                     <div class="part">
                         Отзывы
+                        <div class="line"></div>
                     </div>    
                     <div class="img_feedback"><img src="/src/img/round_man.png" alt="фотка довольного мужика"></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae deserunt, rem eligendi,</p>
@@ -176,6 +188,7 @@
                 <div class="contacts">
                     <div class="part_contact">
                         Мои контакты
+                        <div class="line"></div>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quae deserunt, rem eligendi,</p>
                     <div class="contacts_container">
@@ -213,5 +226,15 @@
                 </div>
                 
                 <footer>Copyright 2021 Андрей Браун. Design by Web</footer>
+                <script>
+                    window.onload = function () {
+                      document.body.classList.add('loaded_hiding');
+                      window.setTimeout(function () {
+                        document.body.classList.add('loaded');
+                        document.body.classList.remove('loaded_hiding');
+                      }, 500);
+                    }
+                  </script>
   </body>
+  
 </html>
