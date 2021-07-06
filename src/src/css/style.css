@@ -1,0 +1,702 @@
+/* 
+СБРОС СТИЛЕЙ 
+*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav, footer, header, aside{display: block;}
+
+html, body{
+height:100%;
+width:100%;
+font-size: 100%;
+line-height: 1;
+font-size:14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;
+} 
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;} 
+button::-moz-focus-inner{padding: 0; border:0;} 
+a, a:visited{text-decoration: none; color: black;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;} 
+img{vertical-align: top;}
+
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+
+/* LOADER */
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 1s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+    transition: 1s opacity;
+    opacity: 1;
+  display: none;
+}
+/* Первы экран */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    background: #344051;
+    position: fixed;
+}
+
+.logo{
+    color: #fff;
+    font-size: 28px;
+    line-height: 60px;
+    padding-left: 388px;
+    float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+}
+
+.menu {
+    float:left;
+    padding-left: 432px;
+}
+
+.menu li {
+    float:left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
+}
+
+.main {
+    width: 100%;
+    height:100%;
+    background: url(../img/paren.png) 90% 100%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;
+
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.title__container {
+    float: left;
+    margin-top: 432px;
+    margin-left: 404px;
+    color: #2c384a;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 1.6s;
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+.title__container h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.title__container h4 {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #79818d;
+}
+
+.title__container input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px;
+    
+}
+
+.menu li a {
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited {
+    color: white;
+}
+.menu li a:hover {
+    color: #e88604;
+}
+.menu li a:active {
+    color: #e88604;
+    transform: scale(1.1);
+}
+
+.title__container input {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.title__container input:hover {
+    transition: all 0.2s;
+    background: #344051;
+    color: white;
+}
+.title__container input:active{
+    transform: scale(1.1);
+}
+@keyframes comming {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes topshift{
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.8s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+@keyframes titlemove{
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+    
+    to {
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+
+/*
+ Заглавие каждого экрана
+  */
+
+
+.part {
+    font-size: 28px;
+    color: #263244;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 110px;
+    padding-bottom: 35px;
+}
+.line {
+    border-bottom: #d17700 solid 5px;
+    width: 70px;
+    margin: 30px auto 0 auto;
+
+}
+.part_contact{
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 110px;
+    padding-bottom: 35px;
+}
+
+/*
+ ОБО МНЕ
+  */
+
+.about_me_container {
+    font-size: 16px;
+    background-color: #fcfdfd;
+    width: 100%;
+    height: 90%;
+}
+.img_about_me {
+    height: 202px;
+    width: 202px;
+    background-repeat: no-repeat;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+.img_about_me {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.img_about_me:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+.about_me_container>p {
+    color: #3f495a;
+    margin-top: 30px;
+    width: 100%;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+.about_me_container input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 10px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 0px 14px 0px 14px;
+}
+.about_me_container input {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.about_me_container input:hover {
+    transition: all 0.2s;
+    background: #344051;
+    color: white;
+}
+.about_me_container input:active{
+    transform: scale(1.1);
+}
+
+ /* 
+ Что я умею
+  */
+
+.what_i_can{
+    background-image: url(../img/bg_sharps.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    max-height: 600px;
+}
+.mini_container{
+    float:left;
+    width: 210px;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.mini_container {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.mini_container:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+.mini_container h1 {
+    color:#cf7600;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.mini_container p {
+    color: #3f495a;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+
+/* 
+КЕЙСЫ
+*/
+.cases  {
+    text-align: left;
+}
+.cases h1 {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.portf_img {
+    margin-left: 390px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+.portfolio {
+    float: left;
+    margin-left: 390px;
+}
+.portfolio h2 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #384354;
+}
+.portfolio p {
+    color: #3f495a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.portfolio input {
+    text-decoration: none;
+    user-select: none;
+    background-color: #63b5ae;
+    color: #fff;
+    padding: 8px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.portfolio input {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.portfolio input:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+.portfolio a {
+    font-weight: lighter;
+    
+}
+
+.project {
+    float:left;
+    margin-left: 85px;
+}
+.project h2 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #384354;
+}
+.project p {
+    color: #3f495a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+/*
+Калькулятор
+*/
+
+.price_calc {
+    margin-bottom: 155px;
+    margin-top: 100px;
+}
+.price_calc h2 {
+    font-size: 28px;
+    color: #263244;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 300px;
+}
+.price_calc h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 500px;
+    margin-top: 55px;
+}
+.price_calc p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 500px;
+    margin-top: 55px;
+
+}
+.price_calc select {
+    border: none;
+    background-color: #eeeeee;
+    color: #7d7d7d;
+    border-radius: 4px;
+    max-width: 100%;
+    width: 960px;
+    padding: 16px 20px;
+}
+.count_and_coast {
+    border-top: #d1d1d1 solid 3px;
+    margin-top: 35px;
+}
+
+/*
+СТАТИСТСИКА
+*/
+
+.my_stat {
+    background-image: url(/src/img/bgstats.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+.stat_container {
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    width: 210px;
+    margin-left: 200px;
+    margin-top: 100px;
+    color: #323e4f;
+    margin-bottom: 40px;
+}
+.stat_container {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.stat_container:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+.stat_container h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 33px;
+}
+.stat_container p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*
+Отзывы
+*/
+
+.feedback {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #243042;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.img_feedback {
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+.img_feedback {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.img_feedback:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+.feedback h3 {
+    margin-top: 35px;
+}
+
+/*
+КОНТАКТЫ
+*/
+
+.contacts {
+    background-image: url(/src/img/bg_contacts.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    min-height: 100%;
+}
+
+.contacts_container {
+    margin-left: 50px;
+    margin-right: 75px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+    display: inline-block;
+}
+.contacts_container {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.contacts_container:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+.contacts_container p {
+    margin-top: 10px;
+}
+.messengers {
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 35px;
+    padding-bottom: 100px;
+}
+.messengers {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.messengers:hover {
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+.leave_msg {
+    color:#d1d1d1;
+
+}
+.leave_msg h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 45px;
+}
+.leave_msg input {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    max-height: 35px;
+    max-width: 350px;
+    width: 350px
+}
+.leave_msg textarea {
+    max-height: 100px;
+    max-width: 760px;
+    width: 760px;
+    margin-bottom: 25px;
+}
+.leave_msg textarea, input {
+    background-color: #d2d6dc;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 22px;
+}
+.button_submit input {
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    border: 2px solid #f9faff;
+    background: none;
+    border-radius: 5px;
+    color: #f9faff;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 30px 14px 0px 14px;
+}
+.button_submit input {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.button_submit input:hover {
+    transition: all 0.2s;
+    background: #f9faff;
+    color: #323e4f;
+}
+.button_submit input:active{
+    transform: scale(1.1);
+}
