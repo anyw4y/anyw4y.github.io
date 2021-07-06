@@ -53,6 +53,7 @@ nav {
     height: 60px;
     width: 100%;
     background: #344051;
+    position: fixed;
 }
 
 .logo{
@@ -85,6 +86,11 @@ nav {
 
 }
 
+.main {
+    width: 100%;
+    height: 100%;
+}
+
 .title__container {
     float: left;
     margin-top: 432px;
@@ -114,6 +120,24 @@ nav {
     padding: 0px 16px;
     margin: 58px 14px 0px 14px;
     
+}
+
+.menu li a {
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited {
+    color: white;
+}
+.menu li a:hover {
+    color: #e88604;
+}
+.menu li a:active {
+    color: #e88604;
+    transform: scale(1.1);
 }
 
 /*
@@ -154,18 +178,18 @@ nav {
     font-size: 16px;
     background-color: #fcfdfd;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 .img_about_me {
     height: 202px;
     width: 202px;
     background-repeat: no-repeat;
     margin-left: 45%;
-    padding-top: 5%;
+    margin-top: 5%;
 }
 .about_me_container>p {
     color: #3f495a;
-    padding-top: 130px;
+    margin-top: 30px;
     width: 100%;
     padding-left: 30%;
     padding-right: 30%;
